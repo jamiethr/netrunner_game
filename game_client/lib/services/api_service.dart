@@ -39,7 +39,7 @@ class ApiService {
   ///
   /// Code from Tyler Codes on YouTube:
   /// https://www.youtube.com/c/TylerCodes
-  Future<Map<String, dynamic>> get(
+  Future<Map<String, dynamic>> httpGet(
     String path, {
     Map<String, dynamic> params = const {},
   }) async {

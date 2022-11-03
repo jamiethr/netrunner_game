@@ -4,8 +4,19 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import '../components/game_board.dart';
 
-class GameScreen extends StatelessWidget {
+class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
+
+  @override
+  State<GameScreen> createState() => _GameScreenState();
+}
+
+class _GameScreenState extends State<GameScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +30,6 @@ class GameScreen extends StatelessWidget {
           ),
         ),
       ]),
-
       body: const GameBoard(),
     );
   }
