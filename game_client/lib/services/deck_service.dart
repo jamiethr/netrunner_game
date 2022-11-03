@@ -4,6 +4,8 @@ import '../models/deck_model.dart';
 import '../models/draw_model.dart';
 
 /// A API service for the server-side deck API
+///
+/// TODO: Refactor later, using some deck stuff built for Netrunner (code this up too?)
 
 class DeckService extends ApiService {
   /// note to self: Tyler said "Every time I make an API call, it's going to be a Future." Why?
