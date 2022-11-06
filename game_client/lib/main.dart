@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:game_client/providers/game_provider.dart';
 import 'package:game_client/screens/game_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(Client_Model());
+  runApp(MultiProvider(
+    // using MultiProvider so we can have more providers later.
+    providers: [ChangeNotifierProvider(create: (_) => GameProvider())],
+    child: const Client_Model(),
+  ));
 }
 
 class Client_Model extends StatelessWidget {

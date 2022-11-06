@@ -4,10 +4,12 @@ import 'package:game_client/constants.dart';
 
 class CardBack extends StatelessWidget {
   final double size;
+  final Widget? child;
 
   const CardBack({
     Key? key,
     this.size = 1,
+    this.child,
   }) : super(key: key);
 
   @override
@@ -15,7 +17,10 @@ class CardBack extends StatelessWidget {
     return Container(
       width: CARD_WIDTH,
       height: CARD_HEIGHT,
-      color: Colors.blueGrey,
+      decoration: BoxDecoration(
+          color: Colors.blueGrey,
+          borderRadius: BorderRadius.circular(BORDER_RAD)),
+      child: child ?? Container(), // if child != null use child else container
     );
   }
 }

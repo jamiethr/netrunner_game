@@ -1,12 +1,13 @@
 import 'dart:convert';
 
+import 'package:game_client/constants.dart';
 import 'package:validators/sanitizers.dart';
 import 'package:http/http.dart' as http;
 
 /// base API service which other specialized API services are built upon.
 
 class ApiService {
-  static const baseUrl = "https://deskofcardsapi.com/api";
+  static const baseUrl = DECK_API_URL;
 
   /// Creates a query string with the [path] to the API being accessed and returns a URL
   /// with the provided [params].
