@@ -32,6 +32,7 @@ class Client_Model extends StatelessWidget {
         //     backgroundColor: Colors.black12,
         //     title: const Text('NETRUNNER CLIENT TEST'),
         //   ),
+        // )
 
         //   floatingActionButton: FloatingActionButton(
         //     child: Icon(Icons.add),
